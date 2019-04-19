@@ -1,6 +1,8 @@
 # PasswordChangeComponent
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
+Angular 2/Typescript password change component where component displays and hides password on click and posts back to main component on save.
+
+
 
 ## Development server
 
