@@ -10,7 +10,7 @@ export class PasswordEditorComponent implements OnInit {
   @Input() model: PasswordEditorModel;
   @Output() post = new EventEmitter();
   @Output() cancel = new EventEmitter();
-  outputModel : PasswordEditorOutputModel = new PasswordEditorOutputModel();
+  outputModel: PasswordEditorOutputModel = new PasswordEditorOutputModel();
   constructor() { }
 
   ngOnInit() {

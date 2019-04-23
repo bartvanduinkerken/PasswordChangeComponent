@@ -8,7 +8,7 @@ import { NG_VALIDATORS, Validator, AbstractControl } from '@angular/forms';
 })
 export class PasswordValidationDirective implements Validator {
   validate(c: AbstractControl): { [key: string]: any; } {
-    if (!this.validatePassword(c)) {
+    if ((c && c.value && c.value.length < 8) || !this.validatePassword(c)) {
       return { 'passwordRequirementsNotMet': true };
     }
     return { 'passwordRequirementsMet': true };
