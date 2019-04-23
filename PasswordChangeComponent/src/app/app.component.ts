@@ -12,17 +12,10 @@ export class AppComponent {
   showPasswordForm() {
     this.editPassword = true;
     this.passwordModel = new PasswordEditorModel();
-    this.passwordModel.labelCurrentPassword = 'Current password';
-    this.passwordModel.labelNewPassword = 'New password';
-    this.passwordModel.labelNewPasswordConfirm = 'New password confirm';
-    console.log('show password component');
   }
-  hidePasswordForm() {
-    this.editPassword = false;
-  }
+
   postPassword(model: PasswordEditorOutputModel) {
     this.editPassword = false;
-    console.log(model);
   }
 
   cancelPassword(id: string) {

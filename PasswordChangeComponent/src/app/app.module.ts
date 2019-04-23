@@ -7,12 +7,14 @@ import { PasswordEditorComponent } from './components/custom/password-editor/pas
 import { PasswordEditorDirective } from './components/custom/password-editor/password-editor.directive';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PasswordValidationDirective } from './components/custom/password-editor/password-validation.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     PasswordEditorComponent,
-    PasswordEditorDirective
+    PasswordEditorDirective,
+    PasswordValidationDirective
   ],
   imports: [
     BrowserModule,
