@@ -14,10 +14,10 @@ export class PasswordEditorDirective {
     this._shown = !this._shown;
     if (this._shown) {
       this.el.nativeElement.setAttribute('type', 'text');
-      span.innerHTML = 'Hide';
+      span.innerHTML = '<i class="fa fa-eye-slash"></i>';
     } else {
       this.el.nativeElement.setAttribute('type', 'password');
-      span.innerHTML = 'Show';
+      span.innerHTML = '<i class="fa fa-eye"></i>';
     }
   }
 
@@ -25,7 +25,7 @@ export class PasswordEditorDirective {
     const parent = this.el.nativeElement.parentNode;
     const span = document.createElement('span');
     span.className = 'toggle-password';
-    span.innerHTML = 'Show';
+    span.innerHTML = '<i class="fa fa-eye"></i>';
     span.addEventListener('click', (event) => {
       this.toggle(span);
     });

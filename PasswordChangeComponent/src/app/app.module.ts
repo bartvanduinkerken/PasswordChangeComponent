@@ -4,7 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PasswordEditorComponent } from './components/custom/password-editor/password-editor.component';
-import { PasswordEditorDirective } from './components/custom/password-editor.directive';
+import { PasswordEditorDirective } from './components/custom/password-editor/password-editor.directive';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -13,9 +15,10 @@ import { PasswordEditorDirective } from './components/custom/password-editor.dir
     PasswordEditorDirective
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     FormsModule,
-    ReactiveFormsModule    
+    ReactiveFormsModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
