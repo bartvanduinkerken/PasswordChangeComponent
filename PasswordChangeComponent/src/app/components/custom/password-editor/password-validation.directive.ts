@@ -11,7 +11,7 @@ export class PasswordValidationDirective implements Validator {
     if ((c && c.value && c.value.length < 8) || !this.validatePassword(c)) {
       return { 'passwordRequirementsNotMet': true };
     }
-    return { 'passwordRequirementsMet': true };
+    return;
   }
   validatePassword(c: AbstractControl): boolean {
     let count = 0;
